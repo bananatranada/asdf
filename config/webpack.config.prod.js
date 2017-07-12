@@ -215,7 +215,6 @@ module.exports = {
                       require('postcss-custom-media'),
                       require('postcss-import'),
                       require('postcss-conditionals'),
-                      require('postcss-class-repeat'),
                       require('postcss-css-variables'),
                     ],
                   },
