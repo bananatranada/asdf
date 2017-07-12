@@ -200,22 +200,23 @@ module.exports = {
                     // https://github.com/facebookincubator/create-react-app/issues/2677
                     ident: 'postcss',
                     plugins: () => [
-                      require('postcss-discard-comments'),
+                      require('postcss-flexbugs-fixes'),
+                      require('postcss-cssnext')({
+                        autoprefixer: {
+                          browsers: [
+                            '>1%',
+                            'last 4 versions',
+                            'Firefox ESR',
+                            'not ie < 9', // React doesn't support IE8 anyway
+                          ],
+                          flexbox: 'no-2009',
+                        },
+                      }),
                       require('postcss-custom-media'),
                       require('postcss-import'),
                       require('postcss-conditionals'),
                       require('postcss-class-repeat'),
                       require('postcss-css-variables'),
-                      require('postcss-flexbugs-fixes'),
-                      autoprefixer({
-                        browsers: [
-                          '>1%',
-                          'last 4 versions',
-                          'Firefox ESR',
-                          'not ie < 9', // React doesn't support IE8 anyway
-                        ],
-                        flexbox: 'no-2009',
-                      }),
                     ],
                   },
                 },

@@ -1,4 +1,4 @@
-@import './css/tachyons';
+@import './css/tachyons/src/tachyons';
 
 body {
     margin: 0;
