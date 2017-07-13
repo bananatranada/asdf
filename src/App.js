@@ -30,7 +30,7 @@ class App extends Component {
           <TransitionGroup>
             <CSSTransition
               key={this.props.location.pathname.split('/')[1]}
-              timeout={20}
+              timeout={50}
               classNames="App-transition"
               mountOnEnter={true}
               unmountOnExit={true}
