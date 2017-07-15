@@ -16,7 +16,7 @@ class App extends Component {
     console.log(this.props.location);
 
     return (
-      <div className="App">
+      <div className="App change-color--on-hover-darken-red change-bg-color--on-hover-darken-red transition-prop--opacity transition-prop--margin">
         <Helmet>
           <title>{this.props.location.pathname}</title>
         </Helmet>

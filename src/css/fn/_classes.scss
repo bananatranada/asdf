@@ -1,38 +1,82 @@
-// @include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-base, $aspect-ratio-prop);
-@include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-mappings);
+// // @include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-base, $aspect-ratio-prop);
+// @include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-mappings);
 
-// @include map-to-css($background-repeats, $background-repeat-base, $background-repeat-prop);
-@include map-to-css($background-repeats, $background-repeat-mappings);
-// @include map-to-css($background-positions, $background-position-mappings);
-@include map-to-css1($background-position-shortcuts, $background-position-modifiers);
-// @include map-to-css($background-sizes, $background-size-mappings);
-// @include map-to-css($background-positions, $background-position-base, $background-position-prop);
-// @include map-to-css($background-sizes, $background-size-base, $background-size-prop);
+// // @include map-to-css($background-repeats, $background-repeat-base, $background-repeat-prop);
+// @include map-to-css($background-repeats, $background-repeat-mappings);
+// // @include map-to-css($background-positions, $background-position-mappings);
+// @include map-to-css1($background-position-shortcuts, $background-position-modifiers);
+// // @include map-to-css($background-sizes, $background-size-mappings);
+// // @include map-to-css($background-positions, $background-position-base, $background-position-prop);
+// // @include map-to-css($background-sizes, $background-size-base, $background-size-prop);
 
-@include map-to-css($border-radiuses, $border-radius-mappings);
-@include map-to-css($border-styles, $border-style-mappings);
-@include map-to-css($border-widths, $border-width-mappings);
-// @include map-to-css($border-styles, $border-style-base, $border-style-prop);
-// @include map-to-css($border-widths, $border-width-base, $border-width-prop);
+// @include map-to-css($border-radiuses, $border-radius-mappings);
+// @include map-to-css($border-styles, $border-style-mappings);
+// @include map-to-css($border-widths, $border-width-mappings);
+// // @include map-to-css($border-styles, $border-style-base, $border-style-prop);
+// // @include map-to-css($border-widths, $border-width-base, $border-width-prop);
 
-@include map-to-css($box-shadows, $box-shadow-mappings);
-@include map-to-css($clears, $clear-mappings);
-@include map-to-css($coordinates, $coordinate-mappings);
-@include map-to-css($displays, $display-mappings);
-@include map-to-css($flex-directions, $flex-direction-mappings);
-@include map-to-css($flex-wraps, $flex-wrap-mappings);
-@include map-to-css($flex-justify-contents, $flex-justify-content-mappings);
-@include map-to-css($flex-align-items, $flex-align-items-mappings);
-@include map-to-css($flex-directions, $flex-direction-mappings);
-@include map-to-css($floats, $float-mappings);
-@include map-to-css($font-family-sans-serifs, $font-family-sans-serif-mappings);
-@include map-to-css($font-family-serifs, $font-family-serif-mappings);
-@include map-to-css($font-family-monospaces, $font-family-monospace-mappings);
-@include map-to-css($font-styles, $font-style-mappings);
-@include map-to-css($font-weights, $font-weight-mappings);
+// @include map-to-css($box-shadows, $box-shadow-mappings);
+// @include map-to-css($clears, $clear-mappings);
+// @include map-to-css($coordinates, $coordinate-mappings);
+// @include map-to-css($displays, $display-mappings);
+// @include map-to-css($flex-directions, $flex-direction-mappings);
+// @include map-to-css($flex-wraps, $flex-wrap-mappings);
+// @include map-to-css($flex-justify-contents, $flex-justify-content-mappings);
+// @include map-to-css($flex-align-items, $flex-align-items-mappings);
+// @include map-to-css($flex-directions, $flex-direction-mappings);
+// @include map-to-css($floats, $float-mappings);
+// @include map-to-css($font-family-sans-serifs, $font-family-sans-serif-mappings);
+// @include map-to-css($font-family-serifs, $font-family-serif-mappings);
+// @include map-to-css($font-family-monospaces, $font-family-monospace-mappings);
+// @include map-to-css($font-styles, $font-style-mappings);
+// @include map-to-css($font-weights, $font-weight-mappings);
 
 
 
-@include map-to-css2($change-color-breakpoints, $change-color-shortcut, $change-color-property, $change-color-modifiers);
-@include map-to-css3($transition-property-breakpoints, $transition-property-shortcut, $transition-property-modifiers);
-@include map-to-css3($padding-x-breakpoints, $padding-x-shortcut, $padding-x-modifiers);
+// @include map-to-css2($change-color-breakpoints, $change-color-shortcut, $change-color-property, $change-color-modifiers);
+// @include map-to-css2($change-bg-color-breakpoints, $change-bg-color-shortcut, $change-bg-color-property, $change-bg-color-modifiers);
+// @include map-to-css3($transition-property-breakpoints, $transition-property-shortcut, $transition-property-modifiers);
+// @include map-to-css3($padding-x-breakpoints, $padding-x-shortcut, $padding-x-modifiers);
+
+
+
+// @include to-css($aspect-ratio-breakpoints, $aspect-ratio-shortcut, $aspect-ratio-modifiers);
+// @include to-css($border-color-breakpoints, $border-color-shortcut, $border-color-modifiers);
+// @include to-css($border-radius-breakpoints, $border-radius-shortcut, $border-radius-modifiers);
+
+
+// ORDER MATTERS; Put multi-property classes first!
+@include to-css($border-color-breakpoints, $border-color-shortcut, $border-color-properties, $border-color-modifiers);
+@include to-css($border-radius-breakpoints, $border-radius-shortcut, $border-radius-properties, $border-radius-modifiers);
+@include to-css($border-radius-top-breakpoints, $border-radius-top-shortcut, $border-radius-top-properties, $border-radius-top-modifiers);
+@include to-css($border-radius-right-breakpoints, $border-radius-right-shortcut, $border-radius-right-properties, $border-radius-right-modifiers);
+@include to-css($border-radius-bottom-breakpoints, $border-radius-bottom-shortcut, $border-radius-bottom-properties, $border-radius-bottom-modifiers);
+@include to-css($border-radius-left-breakpoints, $border-radius-left-shortcut, $border-radius-left-properties, $border-radius-left-modifiers);
+@include to-css($border-radius-top-left-breakpoints, $border-radius-top-left-shortcut, $border-radius-top-left-properties, $border-radius-top-left-modifiers);
+@include to-css($border-radius-top-right-breakpoints, $border-radius-top-right-shortcut, $border-radius-top-right-properties, $border-radius-top-right-modifiers);
+@include to-css($border-radius-bottom-right-breakpoints, $border-radius-bottom-right-shortcut, $border-radius-bottom-right-properties, $border-radius-bottom-right-modifiers);
+@include to-css($border-radius-bottom-left-breakpoints, $border-radius-bottom-left-shortcut, $border-radius-bottom-left-properties, $border-radius-bottom-left-modifiers);
+@include to-css($border-style-breakpoints, $border-style-shortcut, $border-style-properties, $border-style-modifiers);
+@include to-css($border-width-breakpoints, $border-width-shortcut, $border-width-properties, $border-width-modifiers);
+@include to-css($border-top-width-breakpoints, $border-top-width-shortcut, $border-top-width-properties, $border-top-width-modifiers);
+@include to-css($border-right-width-breakpoints, $border-right-width-shortcut, $border-right-width-properties, $border-right-width-modifiers);
+@include to-css($border-bottom-width-breakpoints, $border-bottom-width-shortcut, $border-bottom-width-properties, $border-bottom-width-modifiers);
+@include to-css($border-left-width-breakpoints, $border-left-width-shortcut, $border-left-width-properties, $border-left-width-modifiers);
+
+@include to-css($box-shadow-breakpoints, $box-shadow-shortcut, $box-shadow-properties, $box-shadow-modifiers);
+
+@include to-css($clearfix-breakpoints, $clearfix-shortcut, $clearfix-properties, $clearfix-modifiers);
+
+
+// @include to-css($color-state-breakpoints, $color-state-shortcut, $color-state-properties, $color-state-modifiers);
+
+
+@include to-css($clearfix-breakpoints, $clearfix-shortcut, $clearfix-properties, $clearfix-modifiers);
+
+
+@include to-css($coordinate-top-breakpoints, $coordinate-top-shortcut, $coordinate-top-properties, $coordinate-top-modifiers);
+@include to-css($coordinate-right-breakpoints, $coordinate-right-shortcut, $coordinate-right-properties, $coordinate-right-modifiers);
+@include to-css($coordinate-bottom-breakpoints, $coordinate-bottom-shortcut, $coordinate-bottom-properties, $coordinate-bottom-modifiers);
+@include to-css($coordinate-left-breakpoints, $coordinate-left-shortcut, $coordinate-left-properties, $coordinate-left-modifiers);
+
+@include to-css($display-breakpoints, $display-shortcut, $display-properties, $display-modifiers);

@@ -39,6 +39,7 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "2.0.6",
+    "postcss-merge-rules": "^2.1.2",
     "promise": "7.1.1",
     "react": "^15.6.1",
     "react-dev-utils": "^3.0.2",

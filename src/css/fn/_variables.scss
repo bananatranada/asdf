@@ -107,130 +107,720 @@ $grid-breakpoints: (
 
 
 
-$aspect-ratio-mappings: (
-    'aspect-ratio': padding-bottom,
-);
-$aspect-ratios: (
-    '16x9': ('x': 16, 'y': 9),
-    '9x16': ('x': 9, 'y': 16),
-    '4x3': ('x': 4, 'y': 3),
-    '3x4': ('x': 3, 'y': 4),
-    '6x4': ('x': 6, 'y': 4),
-    '4x6': ('x': 4, 'y': 6),
-    '8x5': ('x': 8, 'y': 5),
-    '5x8': ('x': 5, 'y': 8),
-    '7x5': ('x': 7, 'y': 5),
-    '5x7': ('x': 5, 'y': 7),
-    '1x1': ('x': 1, 'y': 1),
-) !default;
-
-
-
-
-// $background-repeat-base: 'bg-repeat';
-// $background-repeat-prop: 'background-repeat';
-$background-repeat-mappings: (
-    'bg-repeat': background-repeat,
-);
-$background-repeats: (
-    'none': no-repeat,
-) !default;
-
-
-
-// m-x--3, m-l--2
-
-
-// $background-size-breakpoints: (
-//     xs,
-//     sm,
-//     md,
-// ) !default;
-$background-position-shortcuts: (
-    'bg-pos': (xs, sm, md),
-) !default;
-$background-position-modifiers: (
-    'center': (
-        background-position: center center,
-    ),
-    't': (
-        background-position: top center,
-    ),
-) !default;
-
-$background-position-breakpoints: (xs, sm, md);
-$background-position-shortcut: 'bg-pos';
-$background-position-modifiers: (
-    'center': (
-        background-position: center center,
-    ),
-    't': (
-        background-position: top center,
-    ),
-);
-
-
-$hover-color-shortcuts: (
-    'hover-color': (xs, sm, md),
-    'hover-bg-color': (xs, sm, md),
-) !default;
-$background-position-modifiers: (
-    'red:hover': (
-        background-position: center center,
-    ),
-    't': (
-        background-position: top center,
-    ),
-) !default;
-
-
-// $background-position-mappings: (
-//     'bg-pos': background-position,
+// $aspect-ratio-mappings: (
+//     'aspect-ratio': padding-bottom,
 // );
-// $background-positions: (
-//     'center': center center,
-//     't': top center,
-//     'r': center right,
-//     'b': bottom center,
-//     'l': center left,
+// $aspect-ratios: (
+//     '16x9': ('x': 16, 'y': 9),
+//     '9x16': ('x': 9, 'y': 16),
+//     '4x3': ('x': 4, 'y': 3),
+//     '3x4': ('x': 3, 'y': 4),
+//     '6x4': ('x': 6, 'y': 4),
+//     '4x6': ('x': 4, 'y': 6),
+//     '8x5': ('x': 8, 'y': 5),
+//     '5x8': ('x': 5, 'y': 8),
+//     '7x5': ('x': 7, 'y': 5),
+//     '5x7': ('x': 5, 'y': 7),
+//     '1x1': ('x': 1, 'y': 1),
 // ) !default;
 
-$background-size-mappings: (
-    'bg-size': background-size,
-);
-$background-sizes: (
-    'cover': cover,
-    'contain': contain,
-) !default;
 
 
-// $background-position-base: 'bg-pos';
-// $background-position-prop: 'background-position';
-// $background-positions: (
-//     'c': center center,
-//     't': top center,
-//     'r': center right,
-//     'b': bottom center,
-//     'l': center left,
+
+// // $background-repeat-base: 'bg-repeat';
+// // $background-repeat-prop: 'background-repeat';
+// $background-repeat-mappings: (
+//     'bg-repeat': background-repeat,
+// );
+// $background-repeats: (
+//     'none': no-repeat,
 // ) !default;
 
-// $background-size-base: 'bg-size';
-// $background-size-prop: 'background-size';
+
+
+// // m-x--3, m-l--2
+
+
+// // $background-size-breakpoints: (
+// //     xs,
+// //     sm,
+// //     md,
+// // ) !default;
+// $background-position-shortcuts: (
+//     'bg-pos': (xs, sm, md),
+// ) !default;
+// $background-position-modifiers: (
+//     'center': (
+//         background-position: center center,
+//     ),
+//     't': (
+//         background-position: top center,
+//     ),
+// ) !default;
+
+// $background-position-breakpoints: (xs, sm, md);
+// $background-position-shortcut: 'bg-pos';
+// $background-position-modifiers: (
+//     'center': (
+//         background-position: center center,
+//     ),
+//     't': (
+//         background-position: top center,
+//     ),
+// );
+
+
+// $hover-color-shortcuts: (
+//     'hover-color': (xs, sm, md),
+//     'hover-bg-color': (xs, sm, md),
+// ) !default;
+// $background-position-modifiers: (
+//     'red:hover': (
+//         background-position: center center,
+//     ),
+//     't': (
+//         background-position: top center,
+//     ),
+// ) !default;
+
+
+// // $background-position-mappings: (
+// //     'bg-pos': background-position,
+// // );
+// // $background-positions: (
+// //     'center': center center,
+// //     't': top center,
+// //     'r': center right,
+// //     'b': bottom center,
+// //     'l': center left,
+// // ) !default;
+
+// $background-size-mappings: (
+//     'bg-size': background-size,
+// );
 // $background-sizes: (
 //     'cover': cover,
 //     'contain': contain,
 // ) !default;
 
 
+// // $background-position-base: 'bg-pos';
+// // $background-position-prop: 'background-position';
+// // $background-positions: (
+// //     'c': center center,
+// //     't': top center,
+// //     'r': center right,
+// //     'b': bottom center,
+// //     'l': center left,
+// // ) !default;
 
-$border-radius-mappings: (
-    'border-radius': border-radius,
-    'border-radius-tl': border-top-left-radius,
-    'border-radius-tr': border-top-right-radius,
-    'border-radius-bl': border-bottom-left-radius,
-    'border-radius-br': border-bottom-right-radius,
-);
-$border-radiuses: (
+// // $background-size-base: 'bg-size';
+// // $background-size-prop: 'background-size';
+// // $background-sizes: (
+// //     'cover': cover,
+// //     'contain': contain,
+// // ) !default;
+
+
+
+// $border-radius-mappings: (
+//     'border-radius': border-radius,
+//     'border-radius-tl': border-top-left-radius,
+//     'border-radius-tr': border-top-right-radius,
+//     'border-radius-bl': border-bottom-left-radius,
+//     'border-radius-br': border-bottom-right-radius,
+// );
+// $border-radiuses: (
+//     '0': 0,
+//     '1': .125rem,
+//     '2': .25rem,
+//     '3': .5rem,
+//     '4': 1rem,
+//     '100': 100%,
+//     'pill': 9999px,
+//     '0:hover': 14px,
+// ) !default;
+
+
+
+// // $border-style-base: 'border-style';
+// // $border-style-prop: 'border-style';
+// $border-style-mappings: (
+//     'border-style': 'border-style'
+// ) !default;
+// $border-styles: (
+//     'dotted': dotted,
+//     'dashed': dashed,
+//     'solid': solid,
+//     'none': none,
+// ) !default;
+
+// // $border-width-base: 'border-w';
+// // $border-width-prop: 'border-width';
+// $border-width-mappings: (
+//     'border-w': border-width,
+// ) !default;
+// $border-widths: (
+//     '0': 0,
+//     '1': .125rem,
+//     '2': .25rem,
+//     '3': .5rem,
+//     '4': 1rem,
+//     '5': 2rem,
+// ) !default;
+
+
+
+// $box-shadow-mappings: (
+//     'shadow': box-shadow,
+// ) !default;
+// $box-shadows: (
+//     '1': 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ),
+//     '2': 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ),
+//     '3': 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ),
+//     '4': 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ),
+//     '5': 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ),
+// ) !default;
+
+
+
+
+// $clear-mappings: (
+//     'clear': clear,
+// ) !default;
+// $clears: (
+//     'l': left,
+//     'r': right,
+//     'x': both,
+// ) !default;
+
+
+
+
+
+// $coordinate-mappings: (
+//     't': top,
+//     'r': right,
+//     'b': bottom,
+//     'l': left,
+// ) !default;
+// $coordinates: (
+//     'n2': -2rem,
+//     'n1': -1rem,
+//     '0': 0,
+//     '1': 1rem,
+//     '2': 2rem,
+// ) !default;
+
+
+
+// $display-mappings: (
+//     'd': display,
+// ) !default;
+// $displays: (
+//     'none': none,
+//     'inline': inline,
+//     'inline-block': inline-block,
+//     'inline-table': inline-table,
+//     'block': block,
+//     'flex': flex,
+//     'inline-flex': inline-flex,
+//     'table': table,
+//     'table-cell': table-cell,
+//     'table-row': table-row,
+//     'table-row-group': table-row-group,
+//     'table-column': table-column,
+//     'table-column-group': table-column-group,
+// ) !default;
+
+
+
+// // Flexbox
+
+// $flex-direction-mappings: (
+//   'flex-direction': flex-direction,
+// ) !default;
+// $flex-directions: (
+//   'col': column,
+//   'row': row,
+//   'col-reverse': column-reverse,
+//   'row-reverse': row-reverse,
+// ) !default;
+
+// $flex-wrap-mappings: (
+//         'flex-wrap': flex-wrap,
+// ) !default;
+// $flex-wraps: (
+//         '': wrap,
+//         'none': nowrap,
+//         'reverse': wrap-reverse,
+// ) !default;
+
+// $flex-justify-content-mappings: (
+//         'flex-justify-content': justify-content,
+// ) !default;
+// $flex-justify-contents: (
+//         'start': flex-start,
+//         'end': flex-end,
+//         'center': center,
+//         'between': space-between,
+//         'around': space-around,
+// ) !default;
+
+// $flex-align-items-mappings: (
+//         'flex-align-items': align-items,
+// ) !default;
+// $flex-align-items: (
+//         'start': flex-start,
+//         'end': flex-end,
+//         'center': center,
+//         'baseline': baseline,
+//         'stretch': stretch,
+// ) !default;
+
+// $flex-align-content-mappings: (
+//         'flex-align-content': align-content,
+// ) !default;
+// $flex-align-items: (
+//         'start': flex-start,
+//         'end': flex-end,
+//         'center': center,
+//         'between': space-between,
+//         'around': space-around,
+//         'stretch': stretch,
+// ) !default;
+
+
+// $flex-item-order-mappings: (
+//     'flex-item-order': order,
+// ) !default;
+// $flex-item-orders: (
+//         'n1': -1,
+//         '0': 0,
+//         '1': 1,
+// ) !default;
+
+// $flex-item-size-mappings: (
+//         'flex-item-grow': grow,
+//         'flex-item-shrink': shrink,
+// ) !default;
+// $flex-sizes: (
+//         '0': 0,
+//         '1': 1,
+// ) !default;
+
+// $flex-item-align-self-mappings: (
+//         'flex-item-align-self': align-self,
+// ) !default;
+// $flex-item-align-selfs: (
+//         'start': flex-start,
+//         'end': flex-end,
+//         'center': center,
+//         'baseline': baseline,
+//         'stretch': stretch,
+// ) !default;
+
+
+// $flex-item-mappings: (
+//   'flex-item-basis': flex-basis,
+// ) !default;
+// $flex-item-bases: (
+//         '1': 1rem,
+//         '2': 2rem,
+//         '3': 4rem,
+//         '4': 8rem,
+//         '5': 16rem,
+//         '6': 32rem,
+//         '7': 48rem,
+//         '8': 64rem,
+//         '9': 96rem,
+// ) !default;
+
+
+// $float-mappings: (
+//   'float': float,
+// ) !default;
+// $floats: (
+//   'l': left,
+//   'r': right,
+//   'none': none,
+// ) !default;
+
+
+
+// $font-family-sans-serif-mappings: (
+//   'font-family-sans-serif': font-family,
+// ) !default;
+// $font-family-sans-serifs: (
+//   '1': (-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif),
+// ) !default;
+
+// $font-family-serif-mappings: (
+//         'font-family-serif': font-family,
+// ) !default;
+// $font-family-serifs: (
+//         '1': (Georgia, "Times New Roman", Times, serif),
+// ) !default;
+
+// $font-family-monospace-mappings: (
+//         'font-family-serif': font-family,
+// ) !default;
+// $font-family-monospaces: (
+//         '1': (Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace),
+// ) !default;
+
+// $font-style-mappings: (
+//   'font-style': font-style,
+// ) !default;
+// $font-styles: (
+//   'italic': italic,
+//         'normal': normal,
+// ) !default;
+
+// $font-weight-mappings: (
+//         'font-weight': font-weight,
+// ) !default;
+// $font-weights: (
+//         '1': 100,
+//         '2': 200,
+//         '3': 300,
+//         '4': 400,
+//         '5': 500,
+//         '6': 600,
+//         '7': 700,
+//         '8': 800,
+//         '9': 900,
+// ) !default;
+
+// // $color-breakpoints: (
+// //     xs,
+// //     sm,
+// //     md,
+// //     lg,
+// // ) !default;
+
+
+// // Support many shortcuts that use the same modifiers
+// // how to support many shortcuts to use many properties?
+// // $color-shortcuts: (
+// //     'color': (
+// //         breakpoints: (xs, sm, md, lg),
+// //         prop: color,
+// //     ),
+// //     'bg-color': (
+// //         breakpoints: (xs, sm, md, lg),
+// //         prop: background-color,
+// //     ),
+// // ) !default;
+// // $color-modifiers: (
+// //     'red': $red,
+// // ) !default;
+
+
+
+// // $hover-color-shortcuts: (
+// //     'hover-color': (
+// //         breakpoints: (xs, sm, md, lg),
+// //         prop: color,
+// //     ),
+// //     'hover-bg-color': (
+// //         breakpoints: (xs, sm, md, lg),
+// //         prop: background-color,
+// //     ),
+// // ) !default;
+// // $hover-modifiers: (
+// //     'red-darken:hover': darken($red, 10%),
+// //     'red-lighten:hover': lighten($red, 10%),
+// // );
+
+
+
+// $change-color-breakpoints: (xs);
+// $change-color-shortcut: '.change-color';
+// $change-color-property: color;
+// $change-color-modifiers: (
+//     'on-hover-darken-red:hover': darken(map-get($colors, 'red'), 10%),
+//     'on-focus-darken-red:focus': darken(map-get($colors, 'red'), 10%),
+//     'on-hover-lighten-red:hover': lighten(map-get($colors, 'red'), 10%),
+//     'on-focus-lighten-red:focus': lighten(map-get($colors, 'red'), 10%),
+// );
+
+// $change-bg-color-breakpoints: (xs);
+// $change-bg-color-shortcut: '.change-bg-color';
+// $change-bg-color-property: background-color;
+// $change-bg-color-modifiers: (
+//     'on-hover-darken-red:hover': darken(map-get($colors, 'red'), 10%),
+//     'on-focus-darken-red:focus': darken(map-get($colors, 'red'), 10%),
+//     'on-hover-lighten-red:hover': lighten(map-get($colors, 'red'), 10%),
+//     'on-focus-lighten-red:focus': lighten(map-get($colors, 'red'), 10%),
+// );
+// bg-color--darker-red-hover
+
+// don't think about the relationship between the current property and this.
+// just think in terms of state and its color
+$color-state-breakpoints: (xs) !default;
+$color-state-shortcut: 'color' !default;
+$color-state-properties: (color) !default;
+$color-state-modifiers: (
+    'hover-lightblue:hover': lightblue,
+    'focus-lightblue:focus': lightblue,
+) !default;
+
+// $on-breakpoints: (xs);
+// $on-shortcut: '.on';
+// $on-property: color;
+// $on-modifiers: (
+//     'hover-darken-color-red:hover': darken(map-get($colors, 'red'), 10%),
+//     'focus-darken-red:focus': darken(map-get($colors, 'red'), 10%),
+//     'hover-lighten-red:hover': lighten(map-get($colors, 'red'), 10%),
+//     'focus-lighten-red:focus': lighten(map-get($colors, 'red'), 10%),
+// );
+
+
+// $transition-property-breakpoints: (xs);
+// $transition-property-shortcut: '.transition-prop';
+// $transition-property-modifiers: (
+//     'all': (
+//         transition-property: all,
+//     ),
+//     'opacity': (
+//         transition-property: opacity,
+//     ),
+//     'margin': (
+//         transition-property: margin ,
+//     ),
+// );
+
+// $spacers: (
+//     'n1': -.25rem,
+//     '0': 0,
+//     '1': 1rem,
+// );
+
+// $padding-x-spacers: $spacers;
+// $padding-x-breakpoints: (xs, sm, md, lg);
+// $padding-x-shortcut: '.p-x';
+// $padding-x-modifiers: (
+//     '0': (
+//         padding-right: map-get($padding-x-spacers, '0'),
+//         padding-left: map-get($padding-x-spacers, '0'),
+//     ),
+//     '1': (
+//         padding-right: map-get($padding-x-spacers, '1'),
+//         padding-left: map-get($padding-x-spacers, '1'),
+//     ),
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $vertical-aligns: (
+//         'baseline': baseline,
+//         't': top,
+//         'm': middle,
+//         'b': bottom,
+//         'text-b': text-bottom,
+//         'text-t': text-top,
+// ) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $max-width-base: 'w-max';
+// $max-width-prop: 'max-width';
+// $max-widths: (
+//     '1': 1rem,
+//     '2': 2rem,
+//     '3': 4rem,
+//     '4': 8rem,
+//     '5': 16rem,
+//     '6': 32rem,
+//     '7': 48rem,
+//     '8': 64rem,
+//     '9': 96rem,
+//     '100': 100%,
+// ) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // $borders: (
+// //     '': (
+// //         'border-style': solid,
+// //         'border-width': 1px,
+// //     ),
+// //     'rm': (
+// //         'border-style': none,
+// //         'border-width': 0,
+// //     ),
+// //     't': (
+// //         'border-top-style': solid,
+// //         'border-width': 1px,
+// //     ),
+// //     't-rm': (
+// //         'border-style': none,
+// //         'border-width': 0,
+// //     ),
+// //     'r': (
+// //         'border-right-style': solid,
+// //         'border-width': 1px,
+// //     ),
+// //     'b': (
+// //         'border-bottom-style': solid,
+// //         'border-width': 1px,
+// //     ),
+// //     'l': (
+// //         'border-left-style': solid,
+// //         'border-width': 1px,
+// //     ),
+
+// // ) !default;
+
+
+
+
+
+
+
+
+//
+// ASPECT RATIOS
+//
+// Example:
+//
+// <div class="aspect-ratio aspect-ratio--16x9">
+//  <iframe class="aspect-ratio--object"></iframe>
+// </div>
+//
+$aspect-ratio-breakpoints: (xs) !default;
+$aspect-ratio-shortcut: 'ar' !default;
+$aspect-ratio-modifiers: (
+    '': (
+        height: 0,
+        position: relative,
+    ),
+    '16x9': (
+        padding-bottom: 9/16 * 100%,
+    ),
+    '9x16': (
+        padding-bottom: 16/9 * 100%,
+    ),
+    '4x3': (
+        padding-bottom: 3/4 * 100%,
+    ),
+    '3x4': (
+        padding-bottom: 4/3 * 100%,
+    ),
+    '6x4': (
+        padding-bottom: 4/6 * 100%,
+    ),
+    '4x6': (
+        padding-bottom: 6/4 * 100%,
+    ),
+    '8x5': (
+        padding-bottom: 5/8 * 100%,
+    ),
+    '5x8': (
+        padding-bottom: 8/5 * 100%,
+    ),
+    '7x5': (
+        padding-bottom: 5/7 * 100%,
+    ),
+    '5x7': (
+        padding-bottom: 7/5 * 100%,
+    ),
+    '1x1': (
+        padding-bottom: 100%,
+    ),
+) !default;
+
+// transforms (modifier1: (prop1, prop2)) to (modifier1: (prop1:val1, prop2:val2))
+// @function map-to-modifiers($map, $props...) {
+//     $modifiers: ();
+//     @each $label, $val in $map {
+//         $map-with-props: (
+//             $label: ($prop: $val),
+//         );
+//         $modifiers: map-merge($modifiers, $map-with-props);
+//     }
+//     @return $modifiers;
+// }
+
+// $border-color-breakpoints: (xs) !default;
+// $border-color-shortcut: 'b' !default;
+// $border-color-modifiers: map-to-modifiers($colors, border-color) !default;
+
+
+
+
+
+
+//
+// BORDER COLOR
+//
+$border-color-breakpoints: (xs) !default;
+$border-color-shortcut: 'b' !default;
+$border-color-properties: (border-color) !default;
+$border-color-modifiers: $colors !default;
+
+
+//
+// BORDER RADIUS
+// when each direction has its own modifier values, separate them out individually (as shown below)
+$border-radius-common-breakpoints: (xs) !default;
+$border-radius-common-modifiers: (
     '0': 0,
     '1': .125rem,
     '2': .25rem,
@@ -238,29 +828,78 @@ $border-radiuses: (
     '4': 1rem,
     '100': 100%,
     'pill': 9999px,
-    '0:hover': 14px,
 ) !default;
 
+// $border-radius-breakpoints: (xs) !default;
+// $border-radius-shortcut: 'br' !default;
+// $border-radius-modifiers: map-to-modifiers(border-radius, $border-radius-common-modifiers) !default;
 
+// br
+$border-radius-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-shortcut: 'br' !default;
+$border-radius-properties: (border-radius) !default;
+$border-radius-modifiers: $border-radius-common-modifiers !default;
 
-// $border-style-base: 'border-style';
-// $border-style-prop: 'border-style';
-$border-style-mappings: (
-    'border-style': 'border-style'
-) !default;
-$border-styles: (
+// br-t, br-r, br-b, br-l
+$border-radius-top-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-top-shortcut: 'br-t' !default;
+$border-radius-top-properties: (border-top-left-radius, border-top-right-radius) !default;
+$border-radius-top-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-right-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-right-shortcut: 'br-r' !default;
+$border-radius-right-properties: (border-top-right-radius, border-bottom-right-radius) !default;
+$border-radius-right-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-bottom-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-bottom-shortcut: 'br-b' !default;
+$border-radius-bottom-properties: (border-bottom-right-radius, border-bottom-left-radius) !default;
+$border-radius-bottom-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-left-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-left-shortcut: 'br-l' !default;
+$border-radius-left-properties: (border-top-left-radius, border-bottom-left-radius) !default;
+$border-radius-left-modifiers: $border-radius-common-modifiers !default;
+
+// br-tl, br-tr, br-br, br-bl
+$border-radius-top-left-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-top-left-shortcut: 'br-tl' !default;
+$border-radius-top-left-properties: (border-top-left-radius) !default;
+$border-radius-top-left-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-top-right-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-top-right-shortcut: 'br-tr' !default;
+$border-radius-top-right-properties: (border-top-right-radius) !default;
+$border-radius-top-right-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-bottom-right-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-bottom-right-shortcut: 'br-br' !default;
+$border-radius-bottom-right-properties: (border-bottom-right-radius) !default;
+$border-radius-bottom-right-modifiers: $border-radius-common-modifiers !default;
+
+$border-radius-bottom-left-breakpoints: $border-radius-common-breakpoints !default;
+$border-radius-bottom-left-shortcut: 'br-bl' !default;
+$border-radius-bottom-left-properties: (border-bottom-left-radius) !default;
+$border-radius-bottom-left-modifiers: $border-radius-common-modifiers !default;
+
+//
+// BORDER STYLE
+//
+$border-style-breakpoints: (xs) !default;
+$border-style-shortcut: 'b' !default;
+$border-style-properties: (border-style) !default;
+$border-style-modifiers: (
     'dotted': dotted,
     'dashed': dashed,
     'solid': solid,
     'none': none,
 ) !default;
 
-// $border-width-base: 'border-w';
-// $border-width-prop: 'border-width';
-$border-width-mappings: (
-    'border-w': border-width,
-) !default;
-$border-widths: (
+//
+// BORDER WIDTH
+//
+$border-width-common-breakpoints: (xs) !default;
+$border-common-modifiers: (
     '0': 0,
     '1': .125rem,
     '2': .25rem,
@@ -269,42 +908,105 @@ $border-widths: (
     '5': 2rem,
 ) !default;
 
+// bw
+$border-width-breakpoints: $border-width-common-breakpoints !default;
+$border-width-shortcut: 'bw' !default;
+$border-width-properties: (border-width) !default;
+$border-width-modifiers: $border-common-modifiers !default;
+
+// bw-t
+$border-top-width-breakpoints: $border-width-common-breakpoints !default;
+$border-top-width-shortcut: 'bw-t' !default;
+$border-top-width-properties: (border-top-width) !default;
+$border-top-width-modifiers: $border-common-modifiers !default;
+
+// bw-r
+$border-right-width-breakpoints: $border-width-common-breakpoints !default;
+$border-right-width-shortcut: 'bw-r' !default;
+$border-right-width-properties: (border-right-width) !default;
+$border-right-width-modifiers: $border-common-modifiers !default;
+
+// bw-b
+$border-bottom-width-breakpoints: $border-width-common-breakpoints !default;
+$border-bottom-width-shortcut: 'bw-b' !default;
+$border-bottom-width-properties: (border-bottom-width) !default;
+$border-bottom-width-modifiers: $border-common-modifiers !default;
+
+// bw-l
+$border-left-width-breakpoints: $border-width-common-breakpoints !default;
+$border-left-width-shortcut: 'bw-l' !default;
+$border-left-width-properties: (border-left-width) !default;
+$border-left-width-modifiers: $border-common-modifiers !default;
 
 
-$box-shadow-mappings: (
-    'shadow': box-shadow,
+
+
+
+
+
+// $border-radius-breakpoints: (xs) !default;
+// $border-radius-shortcut: 'br-tl' !default;
+// $border-radius-modifiers: map-to-modifiers(border-top-left-radius, $border-radius-lengths) !default;
+
+// $border-radius-breakpoints: (xs) !default;
+// $border-radius-shortcut: 'br-tr' !default;
+// $border-radius-modifiers: map-to-modifiers(border-top-right-radius, $border-radius-lengths) !default;
+
+// $border-radius-breakpoints: (xs) !default;
+// $border-radius-shortcut: 'br-tr' !default;
+// $border-radius-modifiers: map-to-modifiers(border-top-right-radius, $border-radius-lengths) !default;
+
+// $border-radius-breakpoints: (xs) !default;
+// $border-radius-shortcut: 'br-tr' !default;
+// $border-radius-modifiers: map-to-modifiers(border-top-right-radius, $border-radius-lengths) !default;
+
+
+
+
+
+//
+// BOX SHADOW
+//
+$box-shadow-breakpoints: (xs) !default;
+$box-shadow-shortcut: 'shadow' !default;
+$box-shadow-properties: (box-shadow) !default;
+$box-shadow-modifiers: (
+    '1': (0px 0px 4px 2px rgba( 0, 0, 0, 0.2 )),
+    '2': (0px 0px 8px 2px rgba( 0, 0, 0, 0.2 )),
+    '3': (2px 2px 4px 2px rgba( 0, 0, 0, 0.2 )),
+    '4': (2px 2px 8px 0px rgba( 0, 0, 0, 0.2 )),
+    '5': (4px 4px 8px 0px rgba( 0, 0, 0, 0.2 )),
 ) !default;
-$box-shadows: (
-    '1': 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ),
-    '2': 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ),
-    '3': 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ),
-    '4': 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ),
-    '5': 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ),
-) !default;
 
-
-
-
-$clear-mappings: (
-    'clear': clear,
-) !default;
-$clears: (
+//
+// CLEARFIX
+//
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+$clearfix-breakpoints: (xs) !default;
+$clearfix-shortcut: 'cf' !default;
+$clearfix-properties: (clear) !default;
+$clearfix-modifiers: (
     'l': left,
     'r': right,
     'x': both,
+    'none': none,
 ) !default;
 
-
-
-
-
-$coordinate-mappings: (
-    't': top,
-    'r': right,
-    'b': bottom,
-    'l': left,
-) !default;
-$coordinates: (
+//
+// COORDINATES
+//
+$coordinate-common-breakpoints: (xs) !default;
+$coordinate-common-modifiers: (
     'n2': -2rem,
     'n1': -1rem,
     '0': 0,
@@ -312,388 +1014,51 @@ $coordinates: (
     '2': 2rem,
 ) !default;
 
+// t
+$coordinate-top-breakpoints: $coordinate-common-breakpoints !default;
+$coordinate-top-shortcut: 't' !default;
+$coordinate-top-properties: (top) !default;
+$coordinate-top-modifiers: $coordinate-common-modifiers !default;
+
+// r
+$coordinate-right-breakpoints: $coordinate-common-breakpoints !default;
+$coordinate-right-shortcut: 'r' !default;
+$coordinate-right-properties: (right) !default;
+$coordinate-right-modifiers: $coordinate-common-modifiers !default;
+
+// b
+$coordinate-bottom-breakpoints: $coordinate-common-breakpoints !default;
+$coordinate-bottom-shortcut: 'b' !default;
+$coordinate-bottom-properties: (bottom) !default;
+$coordinate-bottom-modifiers: $coordinate-common-modifiers !default;
+
+// l
+$coordinate-left-breakpoints: $coordinate-common-breakpoints !default;
+$coordinate-left-shortcut: 'l' !default;
+$coordinate-left-properties: (left) !default;
+$coordinate-left-modifiers: $coordinate-common-modifiers !default;
 
 
-$display-mappings: (
-    'd': display,
-) !default;
-$displays: (
+
+//
+// DISPLAY
+//
+$display-breakpoints: (xs) !default;
+$display-shortcut: 'd' !default;
+$display-properties: (display) !default;
+$display-modifiers: (
     'none': none,
     'inline': inline,
     'inline-block': inline-block,
-    'inline-table': inline-table,
     'block': block,
-    'flex': flex,
-    'inline-flex': inline-flex,
     'table': table,
     'table-cell': table-cell,
-    'table-row': table-row,
-    'table-row-group': table-row-group,
-    'table-column': table-column,
-    'table-column-group': table-column-group,
+    'flex': flex,
+    'inline-flex': inline-flex,
 ) !default;
 
 
-
-// Flexbox
-
-$flex-direction-mappings: (
-  'flex-direction': flex-direction,
-) !default;
-$flex-directions: (
-  'col': column,
-  'row': row,
-  'col-reverse': column-reverse,
-  'row-reverse': row-reverse,
-) !default;
-
-$flex-wrap-mappings: (
-        'flex-wrap': flex-wrap,
-) !default;
-$flex-wraps: (
-        '': wrap,
-        'none': nowrap,
-        'reverse': wrap-reverse,
-) !default;
-
-$flex-justify-content-mappings: (
-        'flex-justify-content': justify-content,
-) !default;
-$flex-justify-contents: (
-        'start': flex-start,
-        'end': flex-end,
-        'center': center,
-        'between': space-between,
-        'around': space-around,
-) !default;
-
-$flex-align-items-mappings: (
-        'flex-align-items': align-items,
-) !default;
-$flex-align-items: (
-        'start': flex-start,
-        'end': flex-end,
-        'center': center,
-        'baseline': baseline,
-        'stretch': stretch,
-) !default;
-
-$flex-align-content-mappings: (
-        'flex-align-content': align-content,
-) !default;
-$flex-align-items: (
-        'start': flex-start,
-        'end': flex-end,
-        'center': center,
-        'between': space-between,
-        'around': space-around,
-        'stretch': stretch,
-) !default;
-
-
-$flex-item-order-mappings: (
-    'flex-item-order': order,
-) !default;
-$flex-item-orders: (
-        'n1': -1,
-        '0': 0,
-        '1': 1,
-) !default;
-
-$flex-item-size-mappings: (
-        'flex-item-grow': grow,
-        'flex-item-shrink': shrink,
-) !default;
-$flex-sizes: (
-        '0': 0,
-        '1': 1,
-) !default;
-
-$flex-item-align-self-mappings: (
-        'flex-item-align-self': align-self,
-) !default;
-$flex-item-align-selfs: (
-        'start': flex-start,
-        'end': flex-end,
-        'center': center,
-        'baseline': baseline,
-        'stretch': stretch,
-) !default;
-
-
-$flex-item-mappings: (
-  'flex-item-basis': flex-basis,
-) !default;
-$flex-item-bases: (
-        '1': 1rem,
-        '2': 2rem,
-        '3': 4rem,
-        '4': 8rem,
-        '5': 16rem,
-        '6': 32rem,
-        '7': 48rem,
-        '8': 64rem,
-        '9': 96rem,
-) !default;
-
-
-$float-mappings: (
-  'float': float,
-) !default;
-$floats: (
-  'l': left,
-  'r': right,
-  'none': none,
-) !default;
-
-
-
-$font-family-sans-serif-mappings: (
-  'font-family-sans-serif': font-family,
-) !default;
-$font-family-sans-serifs: (
-  '1': (-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif),
-) !default;
-
-$font-family-serif-mappings: (
-        'font-family-serif': font-family,
-) !default;
-$font-family-serifs: (
-        '1': (Georgia, "Times New Roman", Times, serif),
-) !default;
-
-$font-family-monospace-mappings: (
-        'font-family-serif': font-family,
-) !default;
-$font-family-monospaces: (
-        '1': (Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace),
-) !default;
-
-$font-style-mappings: (
-  'font-style': font-style,
-) !default;
-$font-styles: (
-  'italic': italic,
-        'normal': normal,
-) !default;
-
-$font-weight-mappings: (
-        'font-weight': font-weight,
-) !default;
-$font-weights: (
-        '1': 100,
-        '2': 200,
-        '3': 300,
-        '4': 400,
-        '5': 500,
-        '6': 600,
-        '7': 700,
-        '8': 800,
-        '9': 900,
-) !default;
-
-// $color-breakpoints: (
-//     xs,
-//     sm,
-//     md,
-//     lg,
-// ) !default;
-
-
-// Support many shortcuts that use the same modifiers
-// how to support many shortcuts to use many properties?
-// $color-shortcuts: (
-//     'color': (
-//         breakpoints: (xs, sm, md, lg),
-//         prop: color,
-//     ),
-//     'bg-color': (
-//         breakpoints: (xs, sm, md, lg),
-//         prop: background-color,
-//     ),
-// ) !default;
-// $color-modifiers: (
-//     'red': $red,
-// ) !default;
-
-
-
-// $hover-color-shortcuts: (
-//     'hover-color': (
-//         breakpoints: (xs, sm, md, lg),
-//         prop: color,
-//     ),
-//     'hover-bg-color': (
-//         breakpoints: (xs, sm, md, lg),
-//         prop: background-color,
-//     ),
-// ) !default;
-// $hover-modifiers: (
-//     'red-darken:hover': darken($red, 10%),
-//     'red-lighten:hover': lighten($red, 10%),
-// );
-
-
-
-$change-color-breakpoints: (xs);
-$change-color-shortcut: '.change-color';
-$change-color-property: color;
-$change-color-modifiers: (
-    'on-hover-darken-red:hover': darken(map-get($colors, 'red'), 10%),
-    'on-focus-darken-red:focus': darken(map-get($colors, 'red'), 10%),
-    'on-hover-lighten-red:hover': lighten(map-get($colors, 'red'), 10%),
-    'on-focus-lighten-red:focus': lighten(map-get($colors, 'red'), 10%),
-);
-
-
-$transition-property-breakpoints: (xs);
-$transition-property-shortcut: '.transition-prop';
-$transition-property-modifiers: (
-    'all': (
-        transition-property: all,
-    ),
-    'opacity': (
-        transition-property: opacity,
-    ),
-    'margin': (
-        transition-property: margin ,
-    ),
-);
-
-$spacers: (
-    'n1': -.25rem,
-    '0': 0,
-    '1': 1rem,
-);
-
-$padding-x-spacers: $spacers;
-$padding-x-breakpoints: (xs, sm, md, lg);
-$padding-x-shortcut: '.p-x';
-$padding-x-modifiers: (
-    '0': (
-        padding-right: map-get($padding-x-spacers, '0'),
-        padding-left: map-get($padding-x-spacers, '0'),
-    ),
-    '1': (
-        padding-right: map-get($padding-x-spacers, '1'),
-        padding-left: map-get($padding-x-spacers, '1'),
-    ),
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$vertical-aligns: (
-        'baseline': baseline,
-        't': top,
-        'm': middle,
-        'b': bottom,
-        'text-b': text-bottom,
-        'text-t': text-top,
-) !default;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$max-width-base: 'w-max';
-$max-width-prop: 'max-width';
-$max-widths: (
-    '1': 1rem,
-    '2': 2rem,
-    '3': 4rem,
-    '4': 8rem,
-    '5': 16rem,
-    '6': 32rem,
-    '7': 48rem,
-    '8': 64rem,
-    '9': 96rem,
-    '100': 100%,
-) !default;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $borders: (
-//     '': (
-//         'border-style': solid,
-//         'border-width': 1px,
-//     ),
-//     'rm': (
-//         'border-style': none,
-//         'border-width': 0,
-//     ),
-//     't': (
-//         'border-top-style': solid,
-//         'border-width': 1px,
-//     ),
-//     't-rm': (
-//         'border-style': none,
-//         'border-width': 0,
-//     ),
-//     'r': (
-//         'border-right-style': solid,
-//         'border-width': 1px,
-//     ),
-//     'b': (
-//         'border-bottom-style': solid,
-//         'border-width': 1px,
-//     ),
-//     'l': (
-//         'border-left-style': solid,
-//         'border-width': 1px,
-//     ),
-
-// ) !default;
+//
+// FLEXBOX
+//
 
