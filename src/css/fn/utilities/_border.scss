@@ -1,0 +1,81 @@
+// border
+// border-top
+// @each $breakpoint in map-keys($grid-breakpoints) {
+//     @include media-breakpoint-up($breakpoint) {
+//         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+//         // .border#{$infix} { border-style: solid; border-width: 1px; }
+//         // .border-t#{$infix} { border-top-style: solid; border-width: 1px; }
+//         // .border-r#{$infix} { border-right-style: solid; border-width: 1px; }
+//         // .border-b#{$infix} { border-bottom-style: solid; border-width: 1px; }
+//         // .border-l#{$infix} { border-left-style: solid; border-width: 1px; }
+
+//         // .border#{$infix}-none { border-style: none; border-width: 0; }
+//         // .border-t#{$infix}-none { border-top-style: none; border-width: 0; }
+//         // .border-r#{$infix}-none { border-right-style: none; border-width: 0; }
+//         // .border-b#{$infix}-none { border-bottom-style: none; border-width: 0; }
+//         // .border-l#{$infix}-none { border-left-style: none; border-width: 0; }
+//         @each $key, $val in $borders {
+//             $key: infix($key);
+//             @each $k, $v in $val {
+//                 .border#{$key}#{$infix} { #{$k}: #{$v}; }
+//             }
+//         }
+
+//     }
+// }
+
+// border-style
+// border-style-solid
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .border-style#{$infix}-dotted { border-style: dotted; }
+        .border-style#{$infix}-dashed { border-style: dashed; }
+        .border-style#{$infix}-solid { border-style: solid; }
+        .border-style#{$infix}-none { border-style: none; }
+    }
+}
+
+// border-width
+// bodrer-width-4
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $val in $border-widths {
+            .border-w#{$infix}-$key { border-width: $val; }
+        }
+    }
+}
+
+// border-radius
+// border-radius-top
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .border-radius#{$infix}-top { border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+        .border-radius#{$infix}-right { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+        .border-radius#{$infix}-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
+        .border-radius#{$infix}-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+        @each $key, $val in $border-radiuses {
+            .border-radius#{$infix}-#{$key} { border-radius: $val; }
+        }
+    }
+}
+
+// border-color
+// border-color-md-blue
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $val in $colors {
+            .border-color#{$infix}-#{$key} { border-color: $val; }
+        }
+    }
+}
+

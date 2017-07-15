@@ -1,0 +1,12 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .pos#{$infix}-static { position: static; }
+    .pos#{$infix}-relative { position: relative; }
+    .pos#{$infix}-absolute { position: absolute; }
+    .pos#{$infix}-fixed { position: fixed; }
+    .pos#{$infix}-sticky { position: sticky; }
+  }
+}
+

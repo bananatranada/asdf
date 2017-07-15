@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <div className="App-transition-wrapper" style={{}}>
+        <div className="Home App-transition-wrapper" style={{}}>
             <h1>Home</h1>
             <h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

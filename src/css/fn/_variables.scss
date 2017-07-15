@@ -1,0 +1,699 @@
+
+
+// Colors
+$colors: (
+    'black': #000,
+    'near-black': #111,
+    'dark-gray':#333,
+    'mid-gray':#555,
+    'gray': #777,
+    'silver': #999,
+    'light-silver': #aaa,
+    'moon-gray': #ccc,
+    'light-gray': #eee,
+    'near-white': #f4f4f4,
+    'white': #fff,
+
+    'transparent': transparent,
+
+    'black-90': rgba(0,0,0,.9),
+    'black-80': rgba(0,0,0,.8),
+    'black-70': rgba(0,0,0,.7),
+    'black-60': rgba(0,0,0,.6),
+    'black-50': rgba(0,0,0,.5),
+    'black-40': rgba(0,0,0,.4),
+    'black-30': rgba(0,0,0,.3),
+    'black-20': rgba(0,0,0,.2),
+    'black-10': rgba(0,0,0,.1),
+    'black-05': rgba(0,0,0,.05),
+    'black-025': rgba(0,0,0,.025),
+    'black-0125': rgba(0,0,0,.0125),
+
+    'white-90': rgba(255,255,255,.9),
+    'white-80': rgba(255,255,255,.8),
+    'white-70': rgba(255,255,255,.7),
+    'white-60': rgba(255,255,255,.6),
+    'white-50': rgba(255,255,255,.5),
+    'white-40': rgba(255,255,255,.4),
+    'white-30': rgba(255,255,255,.3),
+    'white-20': rgba(255,255,255,.2),
+    'white-10': rgba(255,255,255,.1),
+    'white-05': rgba(255,255,255,.05),
+    'white-025': rgba(255,255,255,.025),
+    'white-0125': rgba(255,255,255,.0125),
+
+    'dark-red': #e7040f,
+    'red': #ff4136,
+    'light-red': #ff725c,
+    'orange': #ff6300,
+    'gold': #ffb700,
+    'yellow': #ffd700,
+    'light-yellow': #fbf1a9,
+    'purple': #5e2ca5,
+    'light-purple': #a463f2,
+    'dark-pink': #d5008f,
+    'hot-pink':#ff41b4,
+    'pink': #ff80cc,
+    'light-pink': #ffa3d7,
+    'dark-green': #137752,
+    'green': #19a974,
+    'light-green': #9eebcf,
+    'navy': #001b44,
+    'dark-blue': #00449e,
+    'blue': #357edd,
+    'light-blue': #96ccff,
+    'lightest-blue': #cdecff,
+    'washed-blue': #f6fffe,
+    'washed-green': #e8fdf5,
+    'washed-yellow': #fffceb,
+    'washed-red': #ffdfdf,
+) !default;
+
+
+
+
+
+$body-bg:       #fff !default;
+$body-color:    #000 !default;
+// $inverse-bg:    $gray-dark !default;
+// $inverse-color: $gray-lighter !default;
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+$font-size-base: 1rem !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+// pixels because breakpoints should be dependent on screen width, not font size
+
+
+// Breakpoints (@include media-breakpoint-up(sm))
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+) !default;
+
+
+
+
+
+
+
+
+
+
+$aspect-ratio-mappings: (
+    'aspect-ratio': padding-bottom,
+);
+$aspect-ratios: (
+    '16x9': ('x': 16, 'y': 9),
+    '9x16': ('x': 9, 'y': 16),
+    '4x3': ('x': 4, 'y': 3),
+    '3x4': ('x': 3, 'y': 4),
+    '6x4': ('x': 6, 'y': 4),
+    '4x6': ('x': 4, 'y': 6),
+    '8x5': ('x': 8, 'y': 5),
+    '5x8': ('x': 5, 'y': 8),
+    '7x5': ('x': 7, 'y': 5),
+    '5x7': ('x': 5, 'y': 7),
+    '1x1': ('x': 1, 'y': 1),
+) !default;
+
+
+
+
+// $background-repeat-base: 'bg-repeat';
+// $background-repeat-prop: 'background-repeat';
+$background-repeat-mappings: (
+    'bg-repeat': background-repeat,
+);
+$background-repeats: (
+    'none': no-repeat,
+) !default;
+
+
+
+// m-x--3, m-l--2
+
+
+// $background-size-breakpoints: (
+//     xs,
+//     sm,
+//     md,
+// ) !default;
+$background-position-shortcuts: (
+    'bg-pos': (xs, sm, md),
+) !default;
+$background-position-modifiers: (
+    'center': (
+        background-position: center center,
+    ),
+    't': (
+        background-position: top center,
+    ),
+) !default;
+
+$background-position-breakpoints: (xs, sm, md);
+$background-position-shortcut: 'bg-pos';
+$background-position-modifiers: (
+    'center': (
+        background-position: center center,
+    ),
+    't': (
+        background-position: top center,
+    ),
+);
+
+
+$hover-color-shortcuts: (
+    'hover-color': (xs, sm, md),
+    'hover-bg-color': (xs, sm, md),
+) !default;
+$background-position-modifiers: (
+    'red:hover': (
+        background-position: center center,
+    ),
+    't': (
+        background-position: top center,
+    ),
+) !default;
+
+
+// $background-position-mappings: (
+//     'bg-pos': background-position,
+// );
+// $background-positions: (
+//     'center': center center,
+//     't': top center,
+//     'r': center right,
+//     'b': bottom center,
+//     'l': center left,
+// ) !default;
+
+$background-size-mappings: (
+    'bg-size': background-size,
+);
+$background-sizes: (
+    'cover': cover,
+    'contain': contain,
+) !default;
+
+
+// $background-position-base: 'bg-pos';
+// $background-position-prop: 'background-position';
+// $background-positions: (
+//     'c': center center,
+//     't': top center,
+//     'r': center right,
+//     'b': bottom center,
+//     'l': center left,
+// ) !default;
+
+// $background-size-base: 'bg-size';
+// $background-size-prop: 'background-size';
+// $background-sizes: (
+//     'cover': cover,
+//     'contain': contain,
+// ) !default;
+
+
+
+$border-radius-mappings: (
+    'border-radius': border-radius,
+    'border-radius-tl': border-top-left-radius,
+    'border-radius-tr': border-top-right-radius,
+    'border-radius-bl': border-bottom-left-radius,
+    'border-radius-br': border-bottom-right-radius,
+);
+$border-radiuses: (
+    '0': 0,
+    '1': .125rem,
+    '2': .25rem,
+    '3': .5rem,
+    '4': 1rem,
+    '100': 100%,
+    'pill': 9999px,
+    '0:hover': 14px,
+) !default;
+
+
+
+// $border-style-base: 'border-style';
+// $border-style-prop: 'border-style';
+$border-style-mappings: (
+    'border-style': 'border-style'
+) !default;
+$border-styles: (
+    'dotted': dotted,
+    'dashed': dashed,
+    'solid': solid,
+    'none': none,
+) !default;
+
+// $border-width-base: 'border-w';
+// $border-width-prop: 'border-width';
+$border-width-mappings: (
+    'border-w': border-width,
+) !default;
+$border-widths: (
+    '0': 0,
+    '1': .125rem,
+    '2': .25rem,
+    '3': .5rem,
+    '4': 1rem,
+    '5': 2rem,
+) !default;
+
+
+
+$box-shadow-mappings: (
+    'shadow': box-shadow,
+) !default;
+$box-shadows: (
+    '1': 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ),
+    '2': 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ),
+    '3': 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ),
+    '4': 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ),
+    '5': 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ),
+) !default;
+
+
+
+
+$clear-mappings: (
+    'clear': clear,
+) !default;
+$clears: (
+    'l': left,
+    'r': right,
+    'x': both,
+) !default;
+
+
+
+
+
+$coordinate-mappings: (
+    't': top,
+    'r': right,
+    'b': bottom,
+    'l': left,
+) !default;
+$coordinates: (
+    'n2': -2rem,
+    'n1': -1rem,
+    '0': 0,
+    '1': 1rem,
+    '2': 2rem,
+) !default;
+
+
+
+$display-mappings: (
+    'd': display,
+) !default;
+$displays: (
+    'none': none,
+    'inline': inline,
+    'inline-block': inline-block,
+    'inline-table': inline-table,
+    'block': block,
+    'flex': flex,
+    'inline-flex': inline-flex,
+    'table': table,
+    'table-cell': table-cell,
+    'table-row': table-row,
+    'table-row-group': table-row-group,
+    'table-column': table-column,
+    'table-column-group': table-column-group,
+) !default;
+
+
+
+// Flexbox
+
+$flex-direction-mappings: (
+  'flex-direction': flex-direction,
+) !default;
+$flex-directions: (
+  'col': column,
+  'row': row,
+  'col-reverse': column-reverse,
+  'row-reverse': row-reverse,
+) !default;
+
+$flex-wrap-mappings: (
+        'flex-wrap': flex-wrap,
+) !default;
+$flex-wraps: (
+        '': wrap,
+        'none': nowrap,
+        'reverse': wrap-reverse,
+) !default;
+
+$flex-justify-content-mappings: (
+        'flex-justify-content': justify-content,
+) !default;
+$flex-justify-contents: (
+        'start': flex-start,
+        'end': flex-end,
+        'center': center,
+        'between': space-between,
+        'around': space-around,
+) !default;
+
+$flex-align-items-mappings: (
+        'flex-align-items': align-items,
+) !default;
+$flex-align-items: (
+        'start': flex-start,
+        'end': flex-end,
+        'center': center,
+        'baseline': baseline,
+        'stretch': stretch,
+) !default;
+
+$flex-align-content-mappings: (
+        'flex-align-content': align-content,
+) !default;
+$flex-align-items: (
+        'start': flex-start,
+        'end': flex-end,
+        'center': center,
+        'between': space-between,
+        'around': space-around,
+        'stretch': stretch,
+) !default;
+
+
+$flex-item-order-mappings: (
+    'flex-item-order': order,
+) !default;
+$flex-item-orders: (
+        'n1': -1,
+        '0': 0,
+        '1': 1,
+) !default;
+
+$flex-item-size-mappings: (
+        'flex-item-grow': grow,
+        'flex-item-shrink': shrink,
+) !default;
+$flex-sizes: (
+        '0': 0,
+        '1': 1,
+) !default;
+
+$flex-item-align-self-mappings: (
+        'flex-item-align-self': align-self,
+) !default;
+$flex-item-align-selfs: (
+        'start': flex-start,
+        'end': flex-end,
+        'center': center,
+        'baseline': baseline,
+        'stretch': stretch,
+) !default;
+
+
+$flex-item-mappings: (
+  'flex-item-basis': flex-basis,
+) !default;
+$flex-item-bases: (
+        '1': 1rem,
+        '2': 2rem,
+        '3': 4rem,
+        '4': 8rem,
+        '5': 16rem,
+        '6': 32rem,
+        '7': 48rem,
+        '8': 64rem,
+        '9': 96rem,
+) !default;
+
+
+$float-mappings: (
+  'float': float,
+) !default;
+$floats: (
+  'l': left,
+  'r': right,
+  'none': none,
+) !default;
+
+
+
+$font-family-sans-serif-mappings: (
+  'font-family-sans-serif': font-family,
+) !default;
+$font-family-sans-serifs: (
+  '1': (-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif),
+) !default;
+
+$font-family-serif-mappings: (
+        'font-family-serif': font-family,
+) !default;
+$font-family-serifs: (
+        '1': (Georgia, "Times New Roman", Times, serif),
+) !default;
+
+$font-family-monospace-mappings: (
+        'font-family-serif': font-family,
+) !default;
+$font-family-monospaces: (
+        '1': (Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace),
+) !default;
+
+$font-style-mappings: (
+  'font-style': font-style,
+) !default;
+$font-styles: (
+  'italic': italic,
+        'normal': normal,
+) !default;
+
+$font-weight-mappings: (
+        'font-weight': font-weight,
+) !default;
+$font-weights: (
+        '1': 100,
+        '2': 200,
+        '3': 300,
+        '4': 400,
+        '5': 500,
+        '6': 600,
+        '7': 700,
+        '8': 800,
+        '9': 900,
+) !default;
+
+// $color-breakpoints: (
+//     xs,
+//     sm,
+//     md,
+//     lg,
+// ) !default;
+
+
+// Support many shortcuts that use the same modifiers
+// how to support many shortcuts to use many properties?
+// $color-shortcuts: (
+//     'color': (
+//         breakpoints: (xs, sm, md, lg),
+//         prop: color,
+//     ),
+//     'bg-color': (
+//         breakpoints: (xs, sm, md, lg),
+//         prop: background-color,
+//     ),
+// ) !default;
+// $color-modifiers: (
+//     'red': $red,
+// ) !default;
+
+
+
+// $hover-color-shortcuts: (
+//     'hover-color': (
+//         breakpoints: (xs, sm, md, lg),
+//         prop: color,
+//     ),
+//     'hover-bg-color': (
+//         breakpoints: (xs, sm, md, lg),
+//         prop: background-color,
+//     ),
+// ) !default;
+// $hover-modifiers: (
+//     'red-darken:hover': darken($red, 10%),
+//     'red-lighten:hover': lighten($red, 10%),
+// );
+
+
+
+$change-color-breakpoints: (xs);
+$change-color-shortcut: '.change-color';
+$change-color-property: color;
+$change-color-modifiers: (
+    'on-hover-darken-red:hover': darken(map-get($colors, 'red'), 10%),
+    'on-focus-darken-red:focus': darken(map-get($colors, 'red'), 10%),
+    'on-hover-lighten-red:hover': lighten(map-get($colors, 'red'), 10%),
+    'on-focus-lighten-red:focus': lighten(map-get($colors, 'red'), 10%),
+);
+
+
+$transition-property-breakpoints: (xs);
+$transition-property-shortcut: '.transition-prop';
+$transition-property-modifiers: (
+    'all': (
+        transition-property: all,
+    ),
+    'opacity': (
+        transition-property: opacity,
+    ),
+    'margin': (
+        transition-property: margin ,
+    ),
+);
+
+$spacers: (
+    'n1': -.25rem,
+    '0': 0,
+    '1': 1rem,
+);
+
+$padding-x-spacers: $spacers;
+$padding-x-breakpoints: (xs, sm, md, lg);
+$padding-x-shortcut: '.p-x';
+$padding-x-modifiers: (
+    '0': (
+        padding-right: map-get($padding-x-spacers, '0'),
+        padding-left: map-get($padding-x-spacers, '0'),
+    ),
+    '1': (
+        padding-right: map-get($padding-x-spacers, '1'),
+        padding-left: map-get($padding-x-spacers, '1'),
+    ),
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$vertical-aligns: (
+        'baseline': baseline,
+        't': top,
+        'm': middle,
+        'b': bottom,
+        'text-b': text-bottom,
+        'text-t': text-top,
+) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$max-width-base: 'w-max';
+$max-width-prop: 'max-width';
+$max-widths: (
+    '1': 1rem,
+    '2': 2rem,
+    '3': 4rem,
+    '4': 8rem,
+    '5': 16rem,
+    '6': 32rem,
+    '7': 48rem,
+    '8': 64rem,
+    '9': 96rem,
+    '100': 100%,
+) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $borders: (
+//     '': (
+//         'border-style': solid,
+//         'border-width': 1px,
+//     ),
+//     'rm': (
+//         'border-style': none,
+//         'border-width': 0,
+//     ),
+//     't': (
+//         'border-top-style': solid,
+//         'border-width': 1px,
+//     ),
+//     't-rm': (
+//         'border-style': none,
+//         'border-width': 0,
+//     ),
+//     'r': (
+//         'border-right-style': solid,
+//         'border-width': 1px,
+//     ),
+//     'b': (
+//         'border-bottom-style': solid,
+//         'border-width': 1px,
+//     ),
+//     'l': (
+//         'border-left-style': solid,
+//         'border-width': 1px,
+//     ),
+
+// ) !default;
+

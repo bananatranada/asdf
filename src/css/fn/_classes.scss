@@ -1,0 +1,38 @@
+// @include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-base, $aspect-ratio-prop);
+@include map-to-aspect-ratios($aspect-ratios, $aspect-ratio-mappings);
+
+// @include map-to-css($background-repeats, $background-repeat-base, $background-repeat-prop);
+@include map-to-css($background-repeats, $background-repeat-mappings);
+// @include map-to-css($background-positions, $background-position-mappings);
+@include map-to-css1($background-position-shortcuts, $background-position-modifiers);
+// @include map-to-css($background-sizes, $background-size-mappings);
+// @include map-to-css($background-positions, $background-position-base, $background-position-prop);
+// @include map-to-css($background-sizes, $background-size-base, $background-size-prop);
+
+@include map-to-css($border-radiuses, $border-radius-mappings);
+@include map-to-css($border-styles, $border-style-mappings);
+@include map-to-css($border-widths, $border-width-mappings);
+// @include map-to-css($border-styles, $border-style-base, $border-style-prop);
+// @include map-to-css($border-widths, $border-width-base, $border-width-prop);
+
+@include map-to-css($box-shadows, $box-shadow-mappings);
+@include map-to-css($clears, $clear-mappings);
+@include map-to-css($coordinates, $coordinate-mappings);
+@include map-to-css($displays, $display-mappings);
+@include map-to-css($flex-directions, $flex-direction-mappings);
+@include map-to-css($flex-wraps, $flex-wrap-mappings);
+@include map-to-css($flex-justify-contents, $flex-justify-content-mappings);
+@include map-to-css($flex-align-items, $flex-align-items-mappings);
+@include map-to-css($flex-directions, $flex-direction-mappings);
+@include map-to-css($floats, $float-mappings);
+@include map-to-css($font-family-sans-serifs, $font-family-sans-serif-mappings);
+@include map-to-css($font-family-serifs, $font-family-serif-mappings);
+@include map-to-css($font-family-monospaces, $font-family-monospace-mappings);
+@include map-to-css($font-styles, $font-style-mappings);
+@include map-to-css($font-weights, $font-weight-mappings);
+
+
+
+@include map-to-css2($change-color-breakpoints, $change-color-shortcut, $change-color-property, $change-color-modifiers);
+@include map-to-css3($transition-property-breakpoints, $transition-property-shortcut, $transition-property-modifiers);
+@include map-to-css3($padding-x-breakpoints, $padding-x-shortcut, $padding-x-modifiers);

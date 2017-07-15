@@ -28,6 +28,7 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "node-sass-chokidar": "0.0.3",
     "object-assign": "4.1.1",
     "postcss-class-repeat": "^0.1.0",
     "postcss-conditionals": "^2.1.0",
@@ -57,6 +58,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "build-css": "node-sass-chokidar src/css/ -o ./css --include-path ./node_modules/ --output-style compressed",
+    "css": "node-sass-chokidar src/css/ -o ./css --include-path ./node_modules/ --watch",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {

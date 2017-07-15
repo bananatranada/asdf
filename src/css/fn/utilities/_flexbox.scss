@@ -1,0 +1,55 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .flex#{$infix}-row            { flex-direction: row; }
+    .flex#{$infix}-column         { flex-direction: column; }
+    .flex#{$infix}-row-reverse    { flex-direction: row-reverse; }
+    .flex#{$infix}-column-reverse { flex-direction: column-reverse; }
+
+    .flex#{$infix}-wrap         { flex-wrap: wrap; }
+    .flex#{$infix}-nowrap       { flex-wrap: nowrap; }
+    .flex#{$infix}-wrap-reverse { flex-wrap: wrap-reverse; }
+
+    .flex-justify-content#{$infix}-start   { justify-content: flex-start; }
+    .flex-justify-content#{$infix}-end     { justify-content: flex-end; }
+    .flex-justify-content#{$infix}-center  { justify-content: center; }
+    .flex-justify-content#{$infix}-between { justify-content: space-between; }
+    .flex-justify-content#{$infix}-around  { justify-content: space-around; }
+
+    .flex-align-items#{$infix}-start    { align-items: flex-start; }
+    .flex-align-items#{$infix}-end      { align-items: flex-end; }
+    .flex-align-items#{$infix}-center   { align-items: center; }
+    .flex-align-items#{$infix}-baseline { align-items: baseline; }
+    .flex-align-items#{$infix}-stretch  { align-items: stretch; }
+
+    .flex-align-content#{$infix}-start   { align-content: flex-start; }
+    .flex-align-content#{$infix}-end     { align-content: flex-end; }
+    .flex-align-content#{$infix}-center  { align-content: center; }
+    .flex-align-content#{$infix}-between { align-content: space-between; }
+    .flex-align-content#{$infix}-around  { align-content: space-around; }
+    .flex-align-content#{$infix}-stretch { align-content: stretch; }
+
+    .flex-align-self#{$infix}-auto     { align-self: auto; }
+    .flex-align-self#{$infix}-start    { align-self: flex-item-start; }
+    .flex-align-self#{$infix}-end      { align-self: flex-item-end; }
+    .flex-align-self#{$infix}-center   { align-self: center; }
+    .flex-align-self#{$infix}-baseline { align-self: baseline; }
+    .flex-align-self#{$infix}-stretch  { align-self: stretch; }
+
+    @each $num in $flex-orders {
+        .flex-order#{$infix}-#{$num} { order: $num; }
+    }
+    @each $num in $flex-grows {
+        .flex-grow#{$infix}-#{$num} { flex-grow: $num; }
+    }
+    @each $num in $flex-shrinks {
+        .flex-shrink#{$infix}-#{$num} { flex-shrink: $num; }
+    }
+
+    .flex-basis#{$infix}-auto { flex-basis: auto; }
+    @each $key, $val in $flex-bases {
+        .flex-order#{$infix}-#{$key} { flex-basis: $val; }
+    }
+  }
+}

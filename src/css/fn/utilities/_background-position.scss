@@ -1,0 +1,11 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .bg#{$infix}-center { background-repeat: no-repeat; background-position: center center; }
+        .bg#{$infix}-top { background-repeat: no-repeat; background-position: top center; }
+        .bg#{$infix}-right { background-repeat: no-repeat; background-position:  center right; }
+        .bg#{$infix}-bottom { background-repeat: no-repeat; background-position: bottom center; }
+        .bg#{$infix}-left { background-repeat: no-repeat; background-position: center left; }
+    }
+}
